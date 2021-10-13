@@ -1,5 +1,5 @@
 __author__ = "James Marmarou"
-__version__ = "1.0"
+__version__ = "1.1"
 
 '''
 This script prompts you to pass a wikipedia URL. E.g.
@@ -19,7 +19,7 @@ It will then provide with a table like below, Containing Metadata about said tab
 | 5    |                            Included SUAs | SydneyCentral Coast  | object     |
 |-------------------------------------------------------------------------------------|
 
-You will then be prompted with which columns you would like to plot. E.g. 2,3
+You will then be prompted with which columns you would like to plot by passing the 'Rank'. E.g. 2,3
 
 and which column you would like to label the x-axis ticks with. E.g. 4 
 
@@ -138,7 +138,7 @@ def plot_numerical_columns(df):
         ax.set_xticklabels(df[column_name])
     plt.legend()
 
-    plt.savefig('chart.png')
+    plt.savefig('static/chart.png')
 
 
 def main():
